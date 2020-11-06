@@ -8,7 +8,7 @@ edition = "2018"
 wasm-opt = ["-Oz", "--enable-mutable-globals"]
 
 [lib]
-crate-type = ["rlib"]
+crate-type = ["cdylib", "rlib"]
 
 [features]
 default = ["console_error_panic_hook"]
